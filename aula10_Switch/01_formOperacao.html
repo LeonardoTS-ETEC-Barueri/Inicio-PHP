@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Estrutura Condicional de Múltipla Escolha (Switch)</title>
+    </head>
+    <body>
+        <div>
+            <form method="GET" action="01_resultFormOperacao.php">
+
+            <h1>Solução pessoal usando condicionais</h1>
+
+                <fieldset><legend>Seletor de Operações (if - Revisão)</legend>
+                    <label for="tNumero">Numero:</label>
+                    <input type="number" id="tNumero" name="nNumero"/>
+                    <br/>
+                    <label for="tOperacao">Operação Desejada:</label>
+                    <select id="tOperaca" name="nOperacao">             <!-- O professor utilizou radio buttons pra isso, com values de 1 a 3.-->
+                        <option value="dobrar">Dobrar</option>
+                        <option value="rCubo">Raiz cúbica</option>
+                        <option value="rQuadrada">Raiz quadrada</option>
+                    </select>
+                    <br/>
+                </fieldset>
+
+            <h1>Solução Correta usando Switch</h1>
+
+                <fieldset><legend>Seletor de Operações (Switch)</legend>
+                    <label for="tNum">Número:</label><input type="number" id="tNum" name="nNum"/>
+                    <br/>
+                    <input type="radio" id="tOp1" name="nOp" value="1">
+                    <label for="tOp1">Dobro</label>
+                    <input type="radio" id="tOp2" name="nOp" value="2">
+                    <label for="tOp2">Raiz quadrada</label>
+                    <input type="radio" id="tOp3" name="nOp" value="3">
+                    <label for="tOp3">Raiz cúbica</label>
+                    <br/>
+                    <input type="submit" value="Calcular"/>
+                </fieldset>
+            </form>
+            <br/>
+
+            
+            <a class="direita" href="inicio.php">Voltar</a> 
+        </div>
+    </body>
+</html>

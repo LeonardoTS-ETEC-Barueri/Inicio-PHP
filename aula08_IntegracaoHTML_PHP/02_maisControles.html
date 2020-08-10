@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="_css/estilo.css" type="text/css"/>
+        <title>Exercício 02 - Utilizar mais controles do form HTML.</title>
+    </head>
+
+    <body>
+        <div>
+            <form method="GET" action="02_tratandoControles.php">
+            <fieldset><legend>Cadastro Usuário</legend>
+                <label for="tUser">Nome: </label>
+                <input type="text" id="tUser" name="nUser" placeholder="Digite seu nome"/>
+                <br/><label for="tNasc">Ano de nascimento: </label>
+                <input type="number" id="tNasc" name="nNasc" placeholder="2000"/>
+                <fieldset><legend>Gênero</legend>
+                    <input type="radio" id="tMasc" name="nGenero" value="Masculino"/>
+                    <label for="tMasc">Masculino</label><br/>
+                    <input type="radio" id="tFem" name="nGenero"/>
+                    <label for="tFem" value="Feminino">Feminino</label><br/>
+                    <input type="radio" id="tOutros" name="nGenero" value="Outros"/>
+                    <label for="tOutros">Outros</label><br/>
+                </fieldset>
+                <br/>
+                <input type="submit" value="Cadastrar"/>
+            </fieldset>
+            </form>
+            
+            <br/>
+            <a class="direita" href="inicio.php">Voltar</a>
+        </div>
+    </body>
+</html>

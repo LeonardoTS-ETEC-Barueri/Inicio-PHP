@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="_css/estilo.css" type="text/css"/>
+        <title>Exercício 02 - Utilizar mais controles do form HTML.</title>
+    </head>
+
+    <body>
+        <div>
+            <form method="GET" action="03_PHPemCSS.php">
+            <fieldset><legend>Formulário de Personalização</legend>
+                <label for="tTxt">Texto: </label>
+                <input type="text" name="dTexto" id="tTxt"/><br/>
+                <label for="tTam">Tamanho</label>
+                <select name="dTam" id="tTam">
+                    <option value="8pt">8</option>
+                    <option value="10pt">10</option>
+                    <option value="14pt" selected>14</option>
+                    <option value="20pt">20</option>
+                    <option value="40pt">40</option>
+                </select><br/>
+                <label for="tCorBG">Cor do Background</label>
+                <select name="dCorBG" id="tCorBG">
+                    <option value="_css/php_bg.jpg" selected>Colorido</option>
+                    <option value="_css/php_bg_grey.jpg">Preto e Branco</option>
+                </select><br/>
+                <label for="tCor">Cor: </label>
+                <input type="color" name="dCor" id="tCor"/><br/>
+                <input type="submit" value="Gerar"/>                
+            </fieldset>
+            </form>
+            
+            <br/>
+            <a class="direita" href="inicio.php">Voltar</a>
+        </div>
+    </body>
+</html>

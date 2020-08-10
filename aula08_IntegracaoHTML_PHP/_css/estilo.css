@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+body{
+    background: url('php_bg.jpg') no-repeat;    /* Caminho da imagem. */
+    background-position: center center; /* Posição absoluta ao centro. */
+    background-attachment: fixed;   /* Fixa a imagem do background no visor, para que ela não se mova quando a altura do visor for maior que a da imagem. */
+    background-size: cover;         /* Isso faz o re-escalamento da imagem pro tamanho do container. */
+    background-color: black;    /* Cor de fundo enquanto a imagem carrega. */
+}
+div::before{
+    content:"Curso em Vídeo - PHP - CSS criado por Taka baseado no modelo do Gustavo Guanabara";
+    padding: 5px;
+    margin: -10px -10px 10px;
+    font-family: 'Arial', 'sans-serif';
+    font-weight: bold;
+    font-size: 10pt;
+    color: white;
+    display: block;
+    background-color: rgba(41, 77, 138,.9);
+    bottom: 10px;
+}
+div{
+    width: 700px;   /* Largura "física" da div */
+    height: 500px;  /* Altura "física" da div */
+    min-height: 500px;  /* Faz o conteúdo, expandir o tamanho da div automáticamente. */
+    /*border: 1px solid black;*/
+    position: absolute;
+    overflow: auto; /* Mantém o conteúdo transbordante dentro da div. */
+    overflow-wrap: break-word;  /* Word Wrap para palavras que transbordem o container */
+    background-color: rgba(204, 204, 204,.9);
+    font-family: 'Arial', 'sans-serif';
+    font-weight: bold;
+    left: 50%;  /* Posiciona a lateral esquerda no centro da página. */
+    top: 50%;   /* Posiciona o topo no centro da página. */
+    transform: translate(-50%, -50%);   /* horizontal, vertical - Volta 50% da imagem na horizontal e vertical, mantendo a area 100% centralizada à página. */
+    padding: 10px;
+}
+
+h2{
+    font: 12pt Arial;
+    color: #171559;
+    font-weight: bold;
+}
+
+ul, ul a{
+    list-style: none;
+    text-decoration: none;
+    color: #6792db;
+    padding: 0;
+}
+
+a.direita{
+    list-style: none;
+    text-decoration: none;
+    color: #6792db;
+    float: right;
+    margin: 0 5px;
+}
+
+a:hover, a.direita:hover{
+    color: blue;
+}
